@@ -63,7 +63,9 @@ main {
 span{
     color: black;
 }
-
+.red{
+    background-color: red;
+}
 
 footer {
     height: 50px;

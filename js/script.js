@@ -100,7 +100,6 @@ function generateBox(number,sizeD,grideNumber) {
     // cambio colore quando clicco la box 
     newElement.addEventListener("click", function(){
         const prova = parseInt(this.innerText);
-        console.log(this.innerText)
         if (grideNumber.includes(prova) === false) {
             this.style.backgroundColor = "blue";
         } else {
@@ -109,19 +108,22 @@ function generateBox(number,sizeD,grideNumber) {
             endLooser();
         }
     });
+    function endLooser(){
+        
+        const boxes = document.querySelectorAll('.box')
+        
+        for(let i = 0; i < boxes.length; i++){
+          // E dopo aver perso far spuntare tutte le altre bombe
+            
+          if(grideNumber.includes(i)){
+            newElement.style.backgroundColor = "red";
+        
+            console.log('prova',grideNumber,i)
+                 
+          }
+    }
+     }
     // ritorno elemnto
     return newElement;
 }
-// function endLooser(){
-//     const prova = parseInt(this.innerText);
-//     for(let i = 0; i < grideNumber.length; i++){
-//       // E dopo aver perso far spuntare tutte le altre bombe
-//       if(grideNumber.includes(prova)){
-//         this.style.backgroundColor = "red";
-//       }
-// }
 
-
-
-
-}
