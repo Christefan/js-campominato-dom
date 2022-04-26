@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app-wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    padding: 20px 100px;
+    align-items: center;
+}
+
+.logo-titolo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo-titolo img {
+    width: 50px;
+}
+
+#play {
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+main {
+    height: calc(100% - 150px);
+    background-color: #7fffd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    height: 600px;
+    width: 600px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.box {
+    /* width: calc(100% / 10);
+    height: calc(100% / 10); */
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+span{
+    color: black;
+}
+
+
+footer {
+    height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
